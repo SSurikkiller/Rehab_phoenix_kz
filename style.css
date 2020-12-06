@@ -1,0 +1,319 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+    box-sizing: border-box;
+    color: #323232;
+    font-size: 16px;
+}
+
+/*Mobile menu style*/
+.burger-link {
+    display: none;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 0 0 #EBD25D;
+    background: #FFE671;
+    border: none;
+    z-index: 100;
+    transition: .3s;
+}
+
+.burger-link span,
+.burger-link span:before,
+.burger-link span:after {
+    display: block;
+    height: 2px;
+    background-color: #323232;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s;
+}
+
+.burger-link span {
+    width: 20px;
+    margin-left: -9px;
+    margin-top: 0;
+}
+
+.burger-link span:before {
+    content: '';
+    width: 17px;
+    margin-left: -7px;
+    margin-top: -6px;
+}
+
+.burger-link span:after {
+    content: '';
+    width: 14px;
+    margin-left: -4px;
+    margin-top: 4px;
+}
+
+.burger-link_active span:before,
+.burger-link_active span:after {
+    width: 20px;
+    margin-left: -10px;
+}
+
+.burger-link:active {
+    box-shadow: 0 0 0 0 #EBD25D;
+    transform: translate(0, 3px);
+}
+
+.burger-link:active,
+.burger-link:focus {
+    outline:none;
+}
+
+
+/* Меню тут */
+.mobile-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: .5s;
+    z-index: 99;
+    left: 100%;
+}
+
+.nav_active {
+    left: 0;
+}
+
+.mobile-menu {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin: 10px auto;
+}
+
+.menu-link {
+    color: #323232;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    z-index: 1;
+    transition: .3s;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+    color: #EBD25D;
+}
+
+/*           HEADERSTYLE    HERE     */
+header {
+    height: 711px;
+    background: #F0FAFF url(img/courer.png) no-repeat 75% 50%;
+    padding-top: 30px;
+}
+#map {
+    height: 100%;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-link {
+    color: #323232;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #F5DB4B;
+}
+
+.mainInform {
+    font-family: Montserrat Alternates;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.secondInform {
+    font-size: 25px;
+}
+
+.tryBtn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 250px;
+    height: 70px;
+    background: #FFE671;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: 0 3px 0 0 #EBD25D;
+    transition: .3s;
+}
+
+.tryText {
+    color: #323232;
+    padding-right: 15px;
+}
+
+.tryBtn:hover {
+    text-decoration: none;
+}
+
+.tryBtn:active {
+    box-shadow: 0 0 0 0 #EBD25D;
+    transform: translate(0, 3px);
+}
+
+/*===================Style for sectionNumbers================*/
+.numbersBlock {
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 12px 32px rgba(19, 30, 71, 0.15);
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbersColumn {
+    text-align: center;
+}
+
+.count {
+    font-family: Montserrat Alternates;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 30px 0 0 0;
+    color: #FFE671;
+}
+
+.nameCount {
+    margin: 0;
+    font-family: Montserrat Alternates;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFE671;
+}
+
+.descrCount {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 15px 0 30px 0;
+    max-width: 130px;
+}
+
+/*================Media===================*/
+@media (max-width: 1200px) {
+    header {
+        background-position: 140% 50%;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .mainInform {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+    .secondInform {
+        font-size: 22px;
+    }
+    .burger-link {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        background: linear-gradient(120deg, #F0FAFF 65%, #FFE671 35%);
+    }
+    .mainInform {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 600px;
+    }
+    .mainInform {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .secondInform {
+        font-size: 20px;
+    }
+    .tryBtn {
+        margin-top: 60px;
+        width: 220px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 100vw;
+    }
+    .logo {
+        width: 40%;
+    }
+    .mainInform {
+        font-size: 6vw;
+        margin-top: 10vw;
+        margin-bottom: 8vw;
+    }
+    .secondInform {
+        font-size: 3.3vw;
+    }
+    .tryBtn {
+        margin-top: 6vw;
+        width: 50vw;
+        height: 13vw;
+        font-size: 4vw;
+    }
+
+    .tryBtn img {
+        width: 3vw;
+    }
+    .count {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .nameCount {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .descrCount {
+        font-size: 3.2vw;
+        line-height: 3.2vw;
+    }
+}
