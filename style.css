@@ -122,7 +122,7 @@ body {
 /*           HEADERSTYLE    HERE     */
 header {
     height: 711px;
-    background: #F0FAFF url(img/courer.png) no-repeat 75% 50%;
+    background: #F0FAFF url(courer.png) no-repeat 75% 50%;
     padding-top: 30px;
 }
 #map {
