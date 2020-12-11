@@ -122,7 +122,8 @@ body {
 /*           HEADERSTYLE    HERE     */
 header {
     height: 711px;
-    background: #F0FAFF url(courer.png) no-repeat 75% 50%;
+    background: #F0FAFF no-repeat 75% 50%;
+    background-image: url("img/courer.png");
     padding-top: 30px;
 }
 #map {
@@ -148,7 +149,7 @@ header {
 }
 
 .mainInform {
-    font-family: Montserrat Alternates;
+    font-family: Montserrat Alternates, serif;
     font-weight: bold;
     font-size: 50px;
     margin-top: 60px;
@@ -194,7 +195,7 @@ header {
     width: 100%;
     background: #fff;
     border-radius: 16px;
-    box-shadow: 0px 12px 32px rgba(19, 30, 71, 0.15);
+    box-shadow: 0 12px 32px rgba(19, 30, 71, 0.15);
     margin-top: -60px;
     display: flex;
     justify-content: space-around;
@@ -206,7 +207,7 @@ header {
 }
 
 .count {
-    font-family: Montserrat Alternates;
+    font-family: Montserrat Alternates, serif;
     font-weight: 900;
     font-size: 50px;
     line-height: 50px;
@@ -216,7 +217,7 @@ header {
 
 .nameCount {
     margin: 0;
-    font-family: Montserrat Alternates;
+    font-family: Montserrat Alternates, serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
@@ -230,7 +231,6 @@ header {
     margin: 15px 0 30px 0;
     max-width: 130px;
 }
-
 
 /*============Registration============*/
 .registration{
