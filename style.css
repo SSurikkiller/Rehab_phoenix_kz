@@ -123,7 +123,7 @@ body {
 header {
     height: 711px;
     background: #F0FAFF no-repeat 75% 50%;
-    background-image: url("img/courer.png");
+    background-image: url("courer.png");
     padding-top: 30px;
 }
 #map {
