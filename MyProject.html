@@ -81,9 +81,7 @@
             </div>
         </div>
     </div>
-    <!-- /.container -->
 </header>
-<!-- header -->
 
 <div class="sectionNumbers">
     <div class="container">
@@ -144,6 +142,22 @@
         function hide(state) {
             document.getElementById('reg').style.display = state;
         }
+        $(document).ready(function () {
+	var link = $('.burger-link');
+	var link_active = $('.burger-link_active');
+	var navigation = $('.mobile-nav');
+
+
+	link.click(function(){
+		link.toggleClass('burger-link_active');
+		navigation.toggleClass('nav_active');
+	});
+
+	link_active.click(function(){
+		navigation.removeClass('nav_active');
+	});
+});
+
     </script>
 
 
