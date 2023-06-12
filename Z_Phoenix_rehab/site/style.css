@@ -411,7 +411,7 @@ body {
 /*    #F0FAFF- blue       HEADERSTYLE    HERE     */
 header {
     height: 711px;
-    background: #FFE671 url("phoenix/1.jpg") no-repeat 75% 50%;
+    background: linear-gradient(120deg, #F0FAFF 25%, #FFE671 75%);;
     padding-top: 30px;
 }
 #map {
