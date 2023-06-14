@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Phoenix Rehab</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700,800,900|Rubik:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Z_Phoenix_rehab/site/style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 
@@ -17,12 +16,21 @@
 
     <link rel="icon" href="Z_Phoenix_rehab/site/phoenix/mini_logo1.ico" type="image/x-icon"/>
 
+    
+    <script type="text/javascript">
+    var map;
 
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [54.98, 82.89],
+            zoom: 13
+        });
+
+        DG.marker([54.98, 82.89]).addTo(map);
+    });
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
-            defer
-    ></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 </head>
 <body>
 <div id="header">
@@ -144,9 +152,6 @@
                     <div class="sim-slider-arrow-right"></div>
                     <div class="sim-slider-dots"></div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
@@ -188,7 +193,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <span class="hoverable">+7 (707) 518 10 77</span>
+                <span class="phone">+7 (707) 518 10 77</span>
             </a>
             
 
@@ -203,7 +208,9 @@
     </div>
     <div class="col">
         <div class="2gis">
-
+            <a href="https://2gis.kz/ustkam/firm/70000001066452209/82.640206%2C49.986432?m=82.640194%2C49.986388%2F18.2" target="_blank">
+                <span>​Улица Колхозная, 53​ Усть-Каменогорск </span>
+            </a>
         </div>
     </div>
 </div>
@@ -212,14 +219,36 @@
 </div>
 
 
+<div id="map" style="width:500px; height:400px"></div>
+
 <script src="script.js"></script>
 <script src="Z_Phoenix_rehab/site/script.js"></script>
 
 <script src="slick/slick.min.js"></script>
-<div class="maps">
-    <div id="map"> </div>
-</div>
+
+
 <script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [49.986514, 82.640123 ],
+            zoom: 13
+        });
+
+        DG.marker([49.986384, 82.640223]).addTo(map);
+    });
+</script>
+
+<script>
+
+    /*
+ src="https://polyfill.io/v3/polyfill.min.js?features=default">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+defer
+>
+
+    type="text/javascript">
     ymaps.ready(init);
     function init(){
         var myMap = new ymaps.Map("map", {
@@ -227,20 +256,17 @@
             zoom: 7
         });
     }
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
-        defer
-></script>
 
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=
+<div class="maps">
+<div id="map"> </div>
+</div>
+src="https://api-maps.yandex.ru/2.1/?apikey=
 5ac4e0f9-4508-4aed-bae9-e8204e9ff90f&lang=en_US" type="text/javascript">
-</script>
 
-<script>
-    /*
+
+    
+
 
 type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae70ffc20b24c07e74b4fee7d9c65dfcf0414a81e1e1b6e767b2f492bd02abdbb&amp;width=100%25&amp;height=720&amp;lang=en_FR&amp;scroll=true">
 
