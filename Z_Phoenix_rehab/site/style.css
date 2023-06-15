@@ -271,11 +271,15 @@ header {
 
 .footer{
     background-color:  linear-gradient(60deg, #FFE671 25%, #F0FAFF 75%);;
+    margin-top: 20px;
+    margin: 10px;
+    border-radius: 10%;
 }
 .footer-title{
     font-family: Montserrat Alternates, serif;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 .bot_log{
     width: 50%;
@@ -285,7 +289,6 @@ header {
 }
 .footer-des{
     font-family: Montserrat Alternates, serif;
-    font-size: 20px;
 }
 
 .footer-des span{
@@ -296,6 +299,9 @@ header {
     color: #323232;          
 }
 
+h3{
+    font-size: 18px;
+}
 a:hover, a:active {
     color: #FFE671;
   }
