@@ -290,8 +290,10 @@ header {
 
 .footer-des span{
     color: #323232;
-    text-decoration: none;
-    display: inline-block;
+}
+
+.phone_link:hover{
+    color: #323232;          
 }
 
 a:hover, a:active {
