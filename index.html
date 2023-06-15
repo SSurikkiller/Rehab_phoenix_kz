@@ -33,6 +33,7 @@
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 </head>
 <body>
+
 <div id="header">
     <div class="mobile-navigation" >
         <button class="burger-link" >
@@ -99,8 +100,9 @@
                             
                     <div class="col-lg-4">
                         
-                    <img src="Z_Phoenix_rehab/site/phoenix/37.jpg" alt="Phoenix picture" class="right_log" style="position: absolute;">
+                    <img src="Z_Phoenix_rehab/site/phoenix/big_logo.png" alt="Phoenix picture" class="right_log" style="position: absolute;">
                     </div>
+                    <!--Z_Phoenix_rehab/site/phoenix/37.jpg-->
                 </div>
     
                 <div class="row">
@@ -196,7 +198,7 @@
                 <span class="phone">+7 (707) 518 10 77</span>
             </a>
             
-
+            
 
 
            
@@ -204,22 +206,65 @@
                 <button onclick="Copy('toCopy')" title="Copy">Copy</button>
                 <div id="toCopy">87057677392 - Администратор <br> 87075181077 - Психолог, Руководитель программы</div>
                 -->
+
         </div>
     </div>
     <div class="col">
-        <div class="2gis">
+        <div class="gis">
             <a href="https://2gis.kz/ustkam/firm/70000001066452209/82.640206%2C49.986432?m=82.640194%2C49.986388%2F18.2" target="_blank">
                 <span>​Улица Колхозная, 53​ Усть-Каменогорск </span>
             </a>
         </div>
     </div>
 </div>
-<div class="footer">
-    
-</div>
+
 
 
 <div id="map" style="width:500px; height:400px"></div>
+
+<div class="footer">
+    <div class="row">
+        <div class="col">
+            <img src="Z_Phoenix_rehab/site/phoenix/big_logo.png" alt="Phoenix picture" class="bot_log" style="position: absolute;">
+        </div>
+        <div class="col">
+            <div class="footer-title">
+                <h2>Адрес</h2>
+            </div>
+            <div class="footer-des">
+                <a href="https://2gis.kz/ustkam/firm/70000001066452209/82.640206%2C49.986432?m=82.640194%2C49.986388%2F18.2" target="_blank">
+                    <span>​Улица Колхозная, 53​ Усть-Каменогорск </span>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="footer-title">
+                <h2>Телефон</h2>
+            </div>
+            <div class="footer-des">
+                <a href="tel:+77075181077">
+                    <span class="phone">+7 (707) 518 10 77</span>
+                </a>    
+            </div>
+        </div>
+        <div class="col">
+            <div class="footer-title">
+                <h2>Социальные сети</h2>
+            </div>
+            <div class="footer-des">
+                
+                <a href="#" class="logo">
+                    <img src="Z_Phoenix_rehab/site/phoenix/whatsapp_logo.svg" alt="whatsapp_logo" class="logo">
+                </a>
+                
+                <a href="#" class="logo">
+                    <img src="Z_Phoenix_rehab/site/phoenix/instagram_logo.svg" alt="instagram_logo" class="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="script.js"></script>
 <script src="Z_Phoenix_rehab/site/script.js"></script>
@@ -233,7 +278,7 @@
     DG.then(function () {
         map = DG.map('map', {
             center: [49.986514, 82.640123 ],
-            zoom: 13
+            zoom: 17
         });
 
         DG.marker([49.986384, 82.640223]).addTo(map);

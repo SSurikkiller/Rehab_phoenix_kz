@@ -264,6 +264,39 @@ header {
 }
 
 
+/*===================Footer=====================*/
+.gis{
+    color:#fff;
+}
+
+.footer{
+    background-color:  linear-gradient(60deg, #FFE671 25%, #F0FAFF 75%);;
+}
+.footer-title{
+    font-family: Montserrat Alternates, serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.bot_log{
+    width: 50%;
+}
+.logo{
+    width: 35%;
+}
+.footer-des{
+    font-family: Montserrat Alternates, serif;
+    font-size: 20px;
+}
+
+.footer-des span{
+    color: #323232;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    color: #FFE671;
+  }
 
 /*================Media===================*/
 @media (max-width: 1200px) {
